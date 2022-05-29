@@ -14,12 +14,14 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const whitelistContract = await hre.ethers.getContractFactory("Whitelist");
+  // const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const deployedWhitelistContract = await whitelistContract.deploy(10);
+  // 10 is the Maximum number of whitelisted addresses allowed
 
-  await greeter.deployed();
+  await deployedWhitelistContract.deployed();
 
-  console.log("Greeter deployed to:", greeter.address);
+  console.log("Whitelist deployed to:", deployedWhitelistContract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
