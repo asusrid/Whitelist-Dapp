@@ -9,3 +9,4 @@ npm run dev
 The Dapp is deployed on https://whitelist-dapp-deploy.vercel.app/ using Vercel.
 
 All changes on prod environment will be seen after pushing into the main branch of the repository.
+
