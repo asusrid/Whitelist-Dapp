@@ -1,15 +1,11 @@
-# Basic Sample Hardhat Project
+# Whitelist Dapp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Whitelist Dapp to allow a maximum of 10 accounts to use a future NFT marketplace.
 
-Try running some of the following tasks:
+Point to the 'my-app' directory and execute the following:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+npm run dev
+
+The Dapp is deployed on https://whitelist-dapp-deploy.vercel.app/ using Vercel.
+
+All changes on prod environment will be seen after pushing into the main branch of the repository.
